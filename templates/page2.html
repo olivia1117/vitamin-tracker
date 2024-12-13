@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="alignment">
+        <p class="alignment"><a href="/">Back to Home</a></p>
+        <p class="alignment"><a href="/page3">Go to Page 3</a></p>
+    </div>
+    <h2 class="container arial">Track My Supplements</h2>
+    <p class="arial">Use the boxes below to enter the supplements that you've taken today in milligrams (mg)</p>
+    <br>
+
+    <form id="vitamin-form" action="/submit" method="post">
+<!-- 
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"> -->
+
+        <table id="supplements" class="supplements">
+            
+            <tr>
+                <th>Ashwagandha</th>
+                <td>
+                    <input type="text" id="ash_mg" name="ash_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Calcium</th>
+                <td>
+                    <input type="text" id="cal_mg" name="cal_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Coenzyme Q10 (CoQ10)</th>
+                <td>
+                    <input type="text" id="coq_mg" name="coq_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Collagen</th>
+                <td>
+                    <input type="text" id="col_mg" name="col_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Curcumin (Turmeric)</th>
+                <td>
+                    <input type="text" id="cur_mg" name="cur_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Elderberry</th>
+                <td>
+                    <input type="text" id="eld_mg" name="eld_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Fish Oil (Omega-3)</th>
+                <td>
+                    <input type="text" id="fish_mg" name="fish_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Ginkgo Biloba</th>
+                <td>
+                    <input type="text" id="gink_mg" name="gink_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Ginseng</th>
+                <td>
+                    <input type="text" id="gin_mg" name="gin_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Iron</th>
+                <td>
+                    <input type="text" id="iron_mg" name="iron_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Magnesium</th>
+                <td>
+                    <input type="text" id="mag_mg" name="mag_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Melatonin</th>
+                <td>
+                    <input type="text" id="mela_mg" name="mela_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Minerals</th>
+                <td>
+                    <input type="text" id="min_mg" name="min_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Multivitamins</th>
+                <td>
+                    <input type="text" id="mul_mg" name="mul_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Probiotics</th>
+                <td>
+                    <input type="text" id="pro_mg" name="pro_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin A</th>
+                <td>
+                    <input type="text" id="vita_mg" name="vita_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin B1 Thiamine</th>
+                <td>
+                    <input type="text" id="vitb1_mg" name="vitb1_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin B2 Riboflavin</th>
+                <td>
+                    <input type="text" id="vitb2_mg" name="vitb2_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin B3 Niacin</th>
+                <td>
+                    <input type="text" id="vitb3_mg" name="vittb3_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin B5 Pantothenic Acid</th>
+                <td>
+                    <input type="text" id="vitb5_mg" name="vitb5_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin B6 Pyridoxine</th>
+                <td>
+                    <input type="text" id="vitb6_mg" name="vitb6_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin B7 Biotin</th>
+                <td>
+                    <input type="text" id="vitb7_mg" name="vitb7_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin B9 Folate/Folic Acid</th>
+                <td>
+                    <input type="text" id="vitb9_mg" name="vitb9_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin B12 Cobalamin</th>
+                <td>
+                    <input type="text" id="vitb12_mg" name="vitb12_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin C</th>
+                <td>
+                    <input type="text" id="vitc_mg" name="vitc_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin D</th>
+                <td>
+                    <input type="text" id="vitd_mg" name="vitd_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin E</th>
+                <td>
+                    <input type="text" id="vite_mg" name="vite_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin K</th>
+                <td>
+                    <input type="text" id="vitk_mg" name="vitk_mg"><br>
+                </td>
+            </tr>
+            <tr>
+                <th>Zinc</th>
+                <td>
+                    <input type="text" id="zinc_mg" name="zinc_mg"><br>
+                </td>
+            </tr>
+        
+        </table>
+        <br>
+        <input type="submit" class="pretty-button" value="Submit">
+    </form>
+
+    <!-- <ul class="alignment arial">
+        <li>Ashwagandha</li> 
+        <li>Calcium</li>
+        <li>Coenzyme Q10 (CoQ10)</li>
+        <li>Collagen</li>
+        <li>Curcumin (Turmeric)</li>
+        <li>Elderberry</li>
+        <li>Fish Oil (Omega-3)</li>
+        <li>Folic Acid</li>
+        <li>Ginkgo Biloba</li>
+        <li>Ginseng</li>
+        <li>Iron</li>
+        <li>Magnesium</li>
+        <li>Melatonin</li>
+        <li>Minerals</li>
+        <li>Multivitamins</li>
+        <li>Probiotics</li>
+        <li>Vitamin A</li>
+        <li>Vitamin B1 Thiamine</li>
+        <li>Vitamin B2 Riboflavin</li>
+        <li>Vitamin B3 Niacin</li>
+        <li>Vitamin B5 Pantothenic Acid</li>
+        <li>Vitamin B6 Pyridoxine</li>
+        <li>Vitamin B7 Biotin</li>
+        <li>Vitamin B9 Folate/Folic Acid</li>
+        <li>Vitamin B12 Cobalamin</li>
+        <li>Vitamin C</li>
+        <li>Vitamin D</li>
+        <li>Vitamin E</li>
+        <li>Vitamin K</li>
+        <li>Zinc</li>
+    </ul> -->
+
+</body>
+</html>
