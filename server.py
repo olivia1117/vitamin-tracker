@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 cred = credentials.Certificate("C:/Users/oadam/vitamin-tracker-secret/vitamin-tracker-6ab1b-firebase-adminsdk-dvnj1-e3561f47e1.json")
 
+#new comment
 firebase_admin.initialize_app(cred)
 
 #render the templates for each page
