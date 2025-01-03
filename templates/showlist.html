@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Shopping List</title>
+</head>
+<body>
+    <br>
+    <br>
+    <a href="/page2" class='pretty-button alignment'>Go Back to Page 2</a>
+    <br>
+    <br>
+    <h2>Here is your shopping list!</h2>
+    <ul>
+        {% for supplement in supplements %}
+            <li>{{ supplement }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

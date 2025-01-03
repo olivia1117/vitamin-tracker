@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Lexend-Regular'; 
+    src: url('Lexend-Regular.ttf') format('truetype');
+}
+
+body {
+    background-color: #73a999; 
+    color: #f5f5f5; 
+    font-family: 'Lexend-Regular';
+    margin: 0;
+    padding: 0; 
+    text-align: center;
+}
+
+h1 {
+    font-size: 70pt;
+    margin: 0;
+    text-align: center; 
+    padding-bottom: 20px; 
+    padding-top: 20px; 
+}
+
+.container {
+    display: inline-block; 
+}
+
+p {
+    font-size: 16pt;
+    text-align: center;
+   
+}
+
+ul {
+    
+    font-size: 16pt;
+    text-align: left-align;
+    display: inline-block;  
+}
+
+a {
+    text-decoration: none;
+    color: #f5f5f5; 
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.alignment {
+    text-align: left;
+    padding-left: 30px;
+}
+
+.arial {
+    font-family: Arial, sans-serif;
+}
+
+.supplements {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 50%; 
+    background-color: #075941;
+    margin: 0 auto; 
+    box-sizing: border-box; 
+}
+
+.supplements td, .supplements th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+    box-sizing: border-box; 
+}
+
+.supplements th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #075941;
+    color: white;
+}
+
+.supplements tr:nth-child(even) {
+    background-color: #075941;
+}
+
+.supplements tr:hover {
+    background-color: #04AA6D;
+}
+
+.pretty-button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 20px 30px;
+    text-align: center;
+    color: white;
+    background-color: #638164;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 30px; 
+    margin-bottom: 30px; 
+}
+
+.pretty-button:hover {
+    background-color: #547056; 
+    transform: scale(1.05); 
+}
+
+
+
+.button-container {
+    display: flex;               
+    justify-content: center;     
+    gap: 30px;                  
+    margin-top: 20px;            
+    margin-bottom: 20px;
+}
+
+.button-container .pretty-button {
+    margin: 10px;                  
+}
+
+
+.notification {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}

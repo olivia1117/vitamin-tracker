@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 2</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="alignment">
+        <p class="alignment"><a href="/">Back to Home</a></p>
+        <p class="alignment"><a href="/page3">Go to Page 3</a></p>
+    </div>
+    <h2 class="container arial">Track My Supplements</h2>
+    <p class="arial">Use the boxes below to enter the supplements that you've taken today in milligrams (mg)</p>
+    <p class="arial">Select supplements to add to your shopping list</p>
+    <br>
+
+    <form id="vitamin-form" action="/submit" method="POST">
+
+        <table id="supplements" class="supplements">
+            <tr>
+                <th>Ashwagandha</th>
+                <td>
+                    <input type="text" id="ashwaganda" name="ashwaganda">
+                </td>
+                <td>
+                    <input type="checkbox" id="ashwaganda_checked" name="ashwaganda_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Calcium</th>
+                <td>
+                    <input type="text" id="calcium" name="calcium">
+                </td>
+                <td>
+                    <input type="checkbox" id="calcium_checked" name="calcium_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Coenzyme Q10 (CoQ10)</th>
+                <td>
+                    <input type="text" id="coq10" name="coq10">
+                </td>
+                <td>
+                    <input type="checkbox" id="coq10_checked" name="coq10_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Collagen</th>
+                <td>
+                    <input type="text" id="collagen" name="collagen">
+                </td>
+                <td>
+                    <input type="checkbox" id="collagen_checked" name="collagen_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Curcumin (Turmeric)</th>
+                <td>
+                    <input type="text" id="curcumin" name="curcumin">
+                </td>
+                <td>
+                    <input type="checkbox" id="curcumin_checked" name="curcumin_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Elderberry</th>
+                <td>
+                    <input type="text" id="elderberry" name="elderberry">
+                </td>
+                <td>
+                    <input type="checkbox" id="elderberry_checked" name="elderberry_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Fish Oil (Omega-3)</th>
+                <td>
+                    <input type="text" id="fish_oil" name="fish_oil">
+                </td>
+                <td>
+                    <input type="checkbox" id="fish_oil_checked" name="fish_oil_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Ginkgo Biloba</th>
+                <td>
+                    <input type="text" id="ginkgo" name="ginkgo">
+                </td>
+                <td>
+                    <input type="checkbox" id="ginkgo_checked" name="ginkgo_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Ginseng</th>
+                <td>
+                    <input type="text" id="ginseng" name="ginseng">
+                </td>
+                <td>
+                    <input type="checkbox" id="ginseng_checked" name="ginseng_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Iron</th>
+                <td>
+                    <input type="text" id="iron" name="iron">
+                </td>
+                <td>
+                    <input type="checkbox" id="iron_checked" name="iron_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Magnesium</th>
+                <td>
+                    <input type="text" id="magnesium" name="magnesium">
+                </td>
+                <td>
+                    <input type="checkbox" id="magnesium_checked" name="magnesium_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Melatonin</th>
+                <td>
+                    <input type="text" id="melatonin" name="melatonin">
+                </td>
+                <td>
+                    <input type="checkbox" id="melatonin_checked" name="melatonin_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Minerals</th>
+                <td>
+                    <input type="text" id="minerals" name="minerals">
+                </td>
+                <td>
+                    <input type="checkbox" id="minerals_checked" name="minerals_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Multivitamins</th>
+                <td>
+                    <input type="text" id="multivitamins" name="multivitamins">
+                </td>
+                <td>
+                    <input type="checkbox" id="multivitamins_checked" name="multivitamins_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Probiotics</th>
+                <td>
+                    <input type="text" id="probiotics" name="probiotics">
+                </td>
+                <td>
+                    <input type="checkbox" id="probiotics_checked" name="probiotics_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin A</th>
+                <td>
+                    <input type="text" id="vitamin_a" name="vitamin_a">
+                </td>
+                <td>
+                    <input type="checkbox" id="vitamin_a_checked" name="vitamin_a_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin B1 Thiamine</th>
+                <td>
+                    <input type="text" id="vitamin_b1" name="vitamin_b1">
+                </td>
+                <td>
+                    <input type="checkbox" id="vitamin_b1_checked" name="vitamin_b1_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin B2 Riboflavin</th>
+                <td>
+                    <input type="text" id="vitamin_b2" name="vitamin_b2">
+                </td>
+                <td>
+                    <input type="checkbox" id="vitamin_b2_checked" name="vitamin_b2_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin B3 Niacin</th>
+                <td>
+                    <input type="text" id="vitamin_b3" name="vitamin_b3">
+                </td>
+                <td>
+                    <input type="checkbox" id="vitamin_b3_checked" name="vitamin_b3_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin B5 Pantothenic Acid</th>
+                <td>
+                    <input type="text" id="vitamin_b5" name="vitamin_b5">
+                </td>
+                <td>
+                    <input type="checkbox" id="vitamin_b5_checked" name="vitamin_b5_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin B6 Pyridoxine</th>
+                <td>
+                    <input type="text" id="vitamin_b6" name="vitamin_b6">
+                </td>
+                <td>
+                    <input type="checkbox" id="vitamin_b6_checked" name="vitamin_b6_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin B7 Biotin</th>
+                <td>
+                    <input type="text" id="vitamin_b7" name="vitamin_b7">
+                </td>
+                <td>
+                    <input type="checkbox" id="vitamin_b7_checked" name="vitamin_b7_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin B9 Folate/Folic Acid</th>
+                <td>
+                    <input type="text" id="vitamin_b9" name="vitamin_b9">
+                </td>
+                <td>
+                    <input type="checkbox" id="vitamin_b9_checked" name="vitamin_b9_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin B12 Cobalamin</th>
+                <td>
+                    <input type="text" id="vitamin_b12" name="vitamin_b12">
+                </td>
+                <td>
+                    <input type="checkbox" id="vitamin_b12_checked" name="vitamin_b12_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin C</th>
+                <td>
+                    <input type="text" id="vitamin_c" name="vitamin_c">
+                </td>
+                <td>
+                    <input type="checkbox" id="vitamin_c_checked" name="vitamin_c_checked"> 
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin D</th>
+                <td>
+                    <input type="text" id="vitamin_d" name="vitamin_d">
+                </td>
+                <td>
+                    <input type="checkbox" id="vitamin_c_checked" name="vitamin_c_checked"> 
+                </td>
+            <tr>
+                <th>Vitamin E</th>
+                <td>
+                    <input type="text" id="vitamin_e" name="vitamin_e">
+                </td>
+                <td>
+                    <input type="checkbox" name="vitamin_e_checked" value="vitamin_e_checked">
+                </td>
+            </tr>
+            <tr>
+                <th>Vitamin K</th>
+                <td>
+                    <input type="text" id="vitamin_k" name="vitamin_k">
+                </td>
+                <td>
+                    <input type="checkbox" name="vitamin_k_checked" value="vitamin_k_checked">
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <div class="button-container">
+            <button type="submit" value="Submit" class="pretty-button">Submit Values</button>
+            <!-- <button type="list" class="pretty-button">Create Shopping List</button> -->
+        </div>
+            <!-- <input type="submit" value="Submit Values" class="pretty-button">
+            <input type="list" value="Create Shopping List" class="pretty-button"> -->
+
+    </form>
+</body>
+</html>
+
